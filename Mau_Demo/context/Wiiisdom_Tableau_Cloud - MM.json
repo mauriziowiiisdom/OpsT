@@ -1,0 +1,21 @@
+{
+    "context-variables": {
+        "TABLEAU_URL": "https://dub01.online.tableau.com",
+        "TABLEAU_USER": "maurizio.mosca@wiiisdom.com",
+        "TABLEAU_VERSION": "2023.2",
+        "TABLEAU_SITE": "wiiisdom",
+        "AUTHENTICATION_METHOD": "Connected App",
+        "CONNECTED_APP_ID": "bc77996c70f07e291520c83305638c0f;E0KuiPJBlfyZBWgCvKoUzoKNRTv4XzdTyGeAp7+Qjn2+IFOI;encrypted",
+        "CONNECTED_APP_SECRET": "65279820f93eeef093499c9fbbc0fcb8;u1naK+S5dfNlVlggZ5jWdpuay9St5o6Ar0MLxC0V63SeHBZM;encrypted",
+        "SECRET_VALUE": "962758331faa80bdd4895cf6280f2436;oIzyCGe1C0fwSAvFwp1IDmcSyaaAZ6xDQnIOYcc9xbAOXoLNjK7FwyAHHww=;encrypted",
+        "PERSONAL_ACCESS_TOKEN": "11070fa94a46588521fd4d81f4afcf87;mpyOlPU04oBj57uNlT7Pay7PfV6ld4NBvhD8GzaXU7BShOwgrfs44VAXvuG3b+MD+WKBh0lQfq7m;encrypted",
+        "ENCRYPTED_VARIABLES_LIST": [
+            "DDW_JDBC",
+            "DDW_USER",
+            "DDW_TOKEN"
+        ],
+        "DDW_JDBC": "f300b8f19ac8408b248b737fa3feb461;CwUGoCmxGS1/7wLCZYc6rkKXwY0T9GRykq2aNXi+yIxx5kp/K9f+WwpKYWT950VbI8INpD/B;encrypted",
+        "DDW_USER": "04389bb9fb78a32a01d70ac796ff0619;3C22D5GEHUL2US7pTpS3CIqfMZg=;encrypted",
+        "DDW_TOKEN": "c00e7b861be976d9c412f0ad3a70ea01;IUSXfN8etpuW7IGZfox5TicEj94hU/tyRYe1EUo9MHD7RbtcpK7nPA4HTOWJE8WNN2TVyHnNc9SKND/2HsZaxNPKb8eW4JGs7lyh0et09ZBKMWXgNcGuS34pp4lR60RjqJXsU9jw+utIpsDERCUUii3BwNoucyTX9fVwZ4NNIIQqQzdtWQX4wvUbG0Lkha33OiEKRKNtpvNYUswnUImqdX5Zubyke0nImetH9qTJSgBC2GvU3lRCTFy7Pe9W4oFzSb3ww1RyahPMq7Sp7fldY9xBwBqdbxhJHSUqlp1dBPba5FzmQOGOGO2GSLhqDk+QuAnNM9bfSwnI/kdMJ/M3cazw75Q5RqcMQT7QrICYoQAD58v7/5MJ0tLEANVvbYHxzFfNYRKyL283JiwAn2/H+BOISO9mNLvlFeHmzn33e7bxTA+AJJd5vpIuB6ssneApfDmnYefm5FTC0EMsgSB8DCeKzZYTNSLj4CsWcy5Q80b3/5kkme2x6YLxTusxZ/pbTzJwJSkcwk0+TspuxAq9Nyq31MoP/E3og0SXMTeeXlm4T9QdeaKbhJp7VQ==;encrypted"
+    }
+}

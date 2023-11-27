@@ -1,0 +1,57 @@
+{
+    "type": "functional",
+    "name": "Demo2Win",
+    "description": "",
+    "tasks": [
+        {
+            "type": "viz_open",
+            "disabled": false,
+            "name": "Open Viz",
+            "url": "[\"{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/Overview\"]"
+        },
+        {
+            "type": "assert_filter_equals",
+            "disabled": false,
+            "name": "Assert Filter Equals",
+            "filter-type": "CATEGORICAL",
+            "check-values": false,
+            "formatted-values": true,
+            "target-worksheet": "Sale Map",
+            "target": "Region"
+        },
+        {
+            "type": "set_filter_list",
+            "disabled": false,
+            "name": "Set Filter - List",
+            "select-all": false,
+            "target-worksheet": "Sale Map",
+            "target": "Region",
+            "values": [
+                "West"
+            ]
+        },
+        {
+            "type": "assert_data_rule_meets",
+            "disabled": false,
+            "name": "Assert Data Rules",
+            "data-type": "SUMMARY",
+            "scope": "every-row",
+            "formatted-values": false,
+            "exclude-nulls": false,
+            "tableau-export-csv": {
+                "encoding": "utf8",
+                "delimiter": ",",
+                "newline-char": "\n"
+            },
+            "target": "Sale Map",
+            "rules": [
+                {
+                    "operator": "greater-than",
+                    "column": "AGG(Profit Ratio)",
+                    "expression-value": "0"
+                }
+            ]
+        }
+    ],
+    "tableau-snapshot": {}
+}

@@ -1,0 +1,83 @@
+{
+    "integrations": [
+        {
+            "type": "database",
+            "enabled": true,
+            "jdbcURL": "jdbc:postgresql://localhost:5432/OpsT_Integration_DB",
+            "user": "postgres",
+            "password": "4fb5f5c85b1e12e003af36c7475e5e24;27dRXVEvMAw=;encrypted"
+        },
+        {
+            "type": "slack",
+            "enabled": false,
+            "webhookUrl": "__YOUR_WEBHOOK_URL__",
+            "onStart": {
+                "enabled": false,
+                "message": "*TEST STARTED*\n\nTest Path: *|TEST_PATH|*\n\nRunning on Host: *|HOSTNAME|* (*|IP|*)"
+            },
+            "onSuccess": {
+                "enabled": false,
+                "message": "*TEST SUCCESS*\n\nTest Path: *|TEST_PATH|*\n\nRunning on Host: *|HOSTNAME|* (*|IP|*)\n\nTested Vizzes:\n*|TESTED_VIZZES|*\n\nHTML Report Paths:\n*|REPORT_PATHS|*"
+            },
+            "onFailure": {
+                "enabled": false,
+                "message": "*TEST FAILED*\n\nTest Path: *|TEST_PATH|*\n\nRunning on Host: *|HOSTNAME|* (*|IP|*)\n\nMessage: *|OUTPUT_MESSAGE|*\n\nTested Vizzes:\n*|TESTED_VIZZES|*\n\nHTML Report Paths:\n*|REPORT_PATHS|*"
+            }
+        },
+        {
+            "type": "email",
+            "enabled": false,
+            "smtpHost": "smtp.gmail.com",
+            "smtpPort": 465,
+            "secure": false,
+            "useAuth": false,
+            "user": "yourname@company.org",
+            "from": "yourname@company.org",
+            "to": "other@company.org",
+            "onStart": {
+                "enabled": false,
+                "message": "<h2>TEST STARTED</h2>\n<hr>\n\n<strong>Test Path:</strong> *|TEST_PATH|*<br />\n<strong>Running on Host:</strong> *|HOSTNAME|* (*|IP|*)<br />"
+            },
+            "onSuccess": {
+                "enabled": false,
+                "message": "<h2>TEST SUCCESS</h2>\n<hr>\n\n<strong>Test Path:</strong> *|TEST_PATH|*<br />\n<strong>Running on Host:</strong> *|HOSTNAME|* (*|IP|*)<br /><br />\n<strong>Tested Vizzes:</strong><br />\n*|TESTED_VIZZES|*<br />\n<strong>HTML Report Paths:</strong><br />\n*|REPORT_PATHS|*"
+            },
+            "onFailure": {
+                "enabled": true,
+                "message": "<h2>TEST FAILED</h2>\n<hr>\n\n<strong>Test Path:</strong> *|TEST_PATH|*<br />\n<strong>Running on Host:</strong> *|HOSTNAME|* (*|IP|*)<br /><br />\n<strong>Message:</strong> *|OUTPUT_MESSAGE|*<br />\n<strong>Tested Vizzes:</strong><br />\n*|TESTED_VIZZES|*<br />\n<strong>HTML Report Paths:</strong><br />\n*|REPORT_PATHS|*"
+            }
+        },
+        {
+            "type": "webhook",
+            "enabled": false,
+            "webhookUrl": "__YOUR_WEBHOOK_URL__",
+            "onStart": {
+                "enabled": false
+            },
+            "onSuccess": {
+                "enabled": false
+            },
+            "onFailure": {
+                "enabled": false
+            }
+        },
+        {
+            "type": "rollbar",
+            "enabled": false,
+            "serverAccessToken": "__YOUR_SERVER_ITEM_ACCESS_TOKEN__",
+            "environment": "development",
+            "onStart": {
+                "enabled": false,
+                "message": "*TEST STARTED*\n\nTest Path: *|TEST_PATH|*\n\nRunning on Host: *|HOSTNAME|* (*|IP|*)"
+            },
+            "onSuccess": {
+                "enabled": false,
+                "message": "*TEST SUCCESS*\n\nTest Path: *|TEST_PATH|*\n\nRunning on Host: *|HOSTNAME|* (*|IP|*)\n\nTested Vizzes:\n*|TESTED_VIZZES|*\n\nHTML Report Paths:\n*|REPORT_PATHS|*"
+            },
+            "onFailure": {
+                "enabled": false,
+                "message": "*TEST FAILED*\n\nTest Path: *|TEST_PATH|*\n\nRunning on Host: *|HOSTNAME|* (*|IP|*)\n\nMessage: *|OUTPUT_MESSAGE|*\n\nTested Vizzes:\n*|TESTED_VIZZES|*\n\nHTML Report Paths:\n*|REPORT_PATHS|*"
+            }
+        }
+    ]
+}

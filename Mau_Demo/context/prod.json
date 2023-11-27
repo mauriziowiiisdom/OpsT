@@ -1,0 +1,29 @@
+{
+    "context-variables": {
+        "TABLEAU_URL": "https://dub01.online.tableau.com/",
+        "TABLEAU_USER": "maurizio.mosca@wiiisdom.com",
+        "TABLEAU_VERSION": "2023.2",
+        "TABLEAU_SITE": "wiiisdom",
+        "CONNECTED_APP_ID": "d0e73a38dabe8a113e83c92f7388dc5c;NUYfid9YcCASZS996+Jxi1kfk8OmMBFZLk1zxDyGbELyRTTn;encrypted",
+        "CONNECTED_APP_SECRET": "cd37aef0b9e7554cd46757201c9d81a8;JqWIwMSePfrc8UUIeVIJjM4KNJebcgnSC9jjI1eo0RvETa7w;encrypted",
+        "SECRET_VALUE": "a1adb72cd0a7219f65808b2de0ac972d;s61fD8+mKhnCvGqnvUlE8XQxjC0LJz3cv3pcNWAGfGEyfwUoMH4xoY6OISw=;encrypted",
+        "PERSONAL_ACCESS_TOKEN": "5eb77ba095dbb357bc437139f7117175;CfG7QSOZ8dMbZd2yZL4+aPQf/8qgscGklWCze8DU64WG4611pPbA9kCgSS2yXuvk+ggsbuWDXcIh;encrypted",
+        "POSTGRES_USER": "postgres",
+        "ENCRYPTED_VARIABLES_LIST": [
+            "POSTGRES_PWD",
+            "TABLEAU_PWD",
+            "T_PWD",
+            "maurizio"
+        ],
+        "POSTGRES_PWD": "449a9cd20c54075a7a29f914f629eb02;ps47kbEDxRY=;encrypted",
+        "DB_NAME": "opsT_SampleDB",
+        "TEST_SQL": " Select '5784' union select '90474'",
+        "T_PWD": "a105992f1c70d3526d46cea5befa6def;BUU6el7HHa6Qa7p32oMU81ARgQ==;encrypted",
+        "image": "//*[@id=\"tabZoneId104\"]/div/div/div/a/img",
+        "USCA_USER": "",
+        "Viz": "",
+        "Dashboard": "",
+        "maurizio": "",
+        "AUTHENTICATION_METHOD": "Connected App"
+    }
+}

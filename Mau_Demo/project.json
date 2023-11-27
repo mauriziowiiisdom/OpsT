@@ -1,0 +1,9 @@
+{
+    "kinesisVersion": "2023.4",
+    "name": "Mau_Demo",
+    "description": "Project for demos",
+    "srcDir": "src",
+    "jobDir": "test",
+    "contextDir": "context",
+    "activeContextGroupKey": "prod.json"
+}

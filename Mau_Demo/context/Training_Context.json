@@ -1,0 +1,18 @@
+{
+    "context-variables": {
+        "TABLEAU_URL": "https://prod-useast-b.online.tableau.com/",
+        "TABLEAU_USER": "maurizio.mosca@wiiisdom.com",
+        "TABLEAU_VERSION": "2023.2",
+        "TABLEAU_SITE": "WiiisdomTraining",
+        "PERSONAL_ACCESS_TOKEN": "aa1077e1a7dc7e1540b3528d315a8b5f;d29zLSTUs0QTbhA9lYJ4DmuCKztaRGGYj4LbTlIHNpPLI+WBFuGuHKWm0lXtdAk0mHWcBBGfX/+3;encrypted",
+        "AUTHENTICATION_METHOD": "Connected App",
+        "POSTGRES_USER": "postgres",
+        "POSTGRES_PWD": "39ab232e7fde357acf9b40609b210a61;8WDTAv07rHU=;encrypted",
+        "ENCRYPTED_VARIABLES_LIST": [
+            "POSTGRES_PWD"
+        ],
+        "CONNECTED_APP_ID": "5949bcc6e18ba6335a338b0c928a68ed;pCarhRtLlTM9Lw0NJo1UADZJ7yWvXOCao5CM6ZEMWI77yFY8;encrypted",
+        "CONNECTED_APP_SECRET": "0886b2959f352367092a82c11b02da3e;YvTiGm/oPv+0a87SlPSuzAJuzwYXPc43Kpt+4hGaJ6RPSMfb;encrypted",
+        "SECRET_VALUE": "44f76d10f66f4f33de7845fe7ffe7f53;QMKOKwipXHvhBIPRpP3/6cx8iYleK4VDBuxaPkO2wTIgLdol3k9EOP4LiGA=;encrypted"
+    }
+}

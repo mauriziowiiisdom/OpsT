@@ -1,0 +1,29 @@
+{
+    "context-variables": {
+        "TABLEAU_URL": "https://10ax.online.tableau.com/",
+        "TABLEAU_USER": "maurizio.mosca@wiiisdom.com",
+        "TABLEAU_VERSION": "2023.2",
+        "TABLEAU_SITE": "mauriziodev",
+        "CONNECTED_APP_ID": "ba99220b87c5fdb40da8ce294d587093;njI/8FIHFog8R65QIRl0cFY1hngTYDCyx3e45AyOcfNFbCre;encrypted",
+        "CONNECTED_APP_SECRET": "ea65cae4c8f480d8b1071e0b2db88fa5;kpdnSrFgFoVT2oISsIyvwF86uQhM60Om+16bc9I0IjLFbQ9t;encrypted",
+        "SECRET_VALUE": "17fe5b93b8a9d82933f5b48072473237;zQoxxSvd/91eKbUKRmqxBdS/sh3FkqfwzlVOHOwPHvNOqx6Ou1H9o7e3Qhk=;encrypted",
+        "PERSONAL_ACCESS_TOKEN": "32eee47c3b10130bfa15d795e748a366;nsU4tq5EyKS05U2irQRNqfdTaXDvJMPX7iPDzhP67QV2URyUytQrXUKnMMapps6iCnuqoxEPVttX;encrypted",
+        "POSTGRES_USER": "postgres",
+        "ENCRYPTED_VARIABLES_LIST": [
+            "POSTGRES_PWD",
+            "TABLEAU_PWD",
+            "T_PWD",
+            "maurizio"
+        ],
+        "POSTGRES_PWD": "f6882a80447f0b3037b78cc763a26fe0;DdI3uPIg9i4=;encrypted",
+        "DB_NAME": "opsT_SampleDB",
+        "TEST_SQL": " Select sales from order_sales where order_year = 2019",
+        "T_PWD": "1691ff4732fcf4d74c1dcfb314971398;2LRJ1u+wS30VbMQHjcxYdkcFhQ==;encrypted",
+        "image": "//*[@id=\"tabZoneId104\"]/div/div/div/a/img",
+        "USCA_USER": "postgres",
+        "Viz": "SampleDS",
+        "Dashboard": "",
+        "maurizio": "",
+        "AUTHENTICATION_METHOD": "Connected App"
+    }
+}
