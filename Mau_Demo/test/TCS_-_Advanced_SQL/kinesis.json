@@ -1,6 +1,6 @@
 {
     "type": "functional",
-    "name": "TCS Validation User Experience - Advanced SQL",
+    "name": "TCS - Advanced SQL",
     "description": "Placeholder",
     "tasks": [
         {
@@ -94,7 +94,7 @@
                 "jdbcURL-generated": true,
                 "jdbc-url": "jdbc:data:world:sql:kevinmazillewiiisdom:salemapdata",
                 "user": "kevinmazillewiiisdom",
-                "password": "5587745109c58f327a9ba9d812670f84;weSm87f1IK1ZbivnJ2DFq1mM8GUMYSbvw1Mz4x3ow8atWPCiiEe4+lwli0VCTN1b1dHVtkk+LUo+Mx13BCYquVijp0xH386YOZDTof1dU1LA+dCSDFgoGas7kyDni8TgSOlUqz1S5EVqgcU/luEhwmKVF48eAVeMU4roB32Jif8vv9rmjpVMUDEfw+XtyiiwzZGZbzLefNL1kdgrK5rQPjvjW2Z7HtWQexfqRbpWoIcwOhJRnNkI+ueOaKoFBEamhD+BlakhUyzUfeRCIEXnpC7tFNQ2nEWH8oCMwx+pr7Xn9aqnjqbJIDQicKjLbZOxn/tK9SI2PlubdW4Sv5nZ0nk3+f+WKmU1NL9xKdTbbUzMymqNo0TMVK4IkRym44UYaU6j6QPHzN0LDNE7aGvwK8d+Oxq7095yRu79isWMEc29j+8TyzcoiJyCRnGENYTB+Che5rTh0CLqDJbiuf4RAwwEttWBiXwkIup0LaoYd1BvTgUlYyojmk9k1Q+aoJDt/ty5a5rfZZiCikSIDvUJmNAPHzomLuJa44T+jbXlLAEcncx2dVL9K6QnCQ==;encrypted"
+                "password": "d39b6ef831d8226b25cb41bda8d2c92a;H6w+FKsq2xGHhQ+ASnq+BTreG27V8whFu788Ojk3j8J8DHMndVT5+xsK8tqJvC/KdeZ6pwtnrI9E0+rRNhk19S4HnCJmEEPuctwNqUnLXVfmgXKaRpt8pCyH6ScvQHyyNYXy7nCIN2WbxoDJw0rU6nSM0FLK7aDqHiTsYJaZwm4h4uwwHdQOY9nA5HBtf0wMDrc/iudcc8T/cpZsfTypHHSBZPwW+Pq9Y/qQDIBFSfyRAsYAmkoVZYRP778e9e2vug2F8Q0nAXbUXeBDaIw6dZTwoa7l5A+XgKBvUZMz3JSm18zfQpbkCC222xoirsG8CMv9N3qKUOgc8LZLHu8N1GKiFwXNbMRNG8/PmTDAUBsYcgZKo5APlHt76g0pBTJsEGR8djyBrhmp7gGHXAaBkb4l0hZz2pHop5SzTj+x0SFCc5OljCx3OjW3vgfwa7LFp0s6L1PMH7i/tvwHaA+IOvCUuF0Kl1rGls2om0Z+MDqEiOTWwcgYOhwcpHjUTZTcSE5xNV+flWDw/CRJXSswSQyJPWRrBWc9jzf4x/RQ3dZQv13X/+ih7lESyw==;encrypted"
             },
             "truncate-decimal-places": -1,
             "comparison-mode": "native",
@@ -112,7 +112,7 @@
             "source-doc-type": "workbook",
             "tableau-server-url": "{{TABLEAU_URL}}",
             "tableau-server-user": "{{TABLEAU_USER}}",
-            "tableau-server-password": "d9c03877f48e3c65e8d2ee96f6cbfa59;u+g2OutRXoHv3/I92HAS;encrypted",
+            "tableau-server-password": "e490545cefdbb55753664faa12c6784f;1kwlEDAuxU8rQmL1zy0W;encrypted",
             "site-id": "{{TABLEAU_SITE}}",
             "project": "{{TABLEAU_PROJECT}}",
             "target-context": "Wiiisdom_Tableau_Cloud - MM.json",
