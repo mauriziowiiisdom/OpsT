@@ -1,3 +1,3 @@
 # OpsT
 Repository for Wiiisdom Ops for Tableau tests. 
-Contains push token to trigger jenkins pipeline when something changes
+Added OpsT_MM webhook to trigger jenkins job when repository changes
