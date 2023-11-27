@@ -1,0 +1,29 @@
+{
+    "type": "functional",
+    "name": "_IDBS - Assert Image",
+    "description": "",
+    "tasks": [
+        {
+            "type": "viz_open",
+            "disabled": false,
+            "name": "Open Viz",
+            "url": "[\"{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore_Img/SuperstoreAnalysis\"]"
+        },
+        {
+            "type": "set_filter_list",
+            "disabled": true,
+            "name": "Set Filter - List",
+            "select-all": true,
+            "target-worksheet": "Ship Mode",
+            "target": "Ship Mode"
+        },
+        {
+            "type": "assert_image_equals",
+            "disabled": false,
+            "name": "Assert Image Equals",
+            "expected-image-path": "resources/snapshot-SuperstoreAnalysis.png",
+            "comparison-mode": "Fine"
+        }
+    ],
+    "tableau-snapshot": {}
+}

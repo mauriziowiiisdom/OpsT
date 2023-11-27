@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/kinesis.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://raw.githubusercontent.com/mohsen1/json-formatter-js/v1.1.0/dist/bundle.js" type="text/javascript"></script> <!-- json-formatter-js, distributed as bundle.js on github -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js" type="text/javascript"></script>
+    <script src="https://raw.githubusercontent.com/i-like-robots/EasyZoom/master/dist/easyzoom.js" type="text/javascript"></script>
+    <!-- Init easyzoom -->
+    <script language="javascript">$(document).ready(function() { $('.easyzoom').easyZoom(); });</script>
+    <meta charset="UTF-8">
+    <base target="_blank">
+    <title></title>
+</head>
+<body>
+<div class="col-md-1"></div>
+<div class="col-md-10">
+    <table class="table table-borderless">
+        <tr>
+            <td class="col-md-3 text-center vert-align">
+                
+                    
+                        <h4><span class="label label-danger">&#10060; Failed</span></h4>
+                    
+                
+            </td>
+            <td class="col-md-6 text-center vert-align">
+                <h3 class="white-space-prewrap">_IDBS - Assert Image</h3>
+                <h5></h5>
+                <h5>2023-06-09 09:13:15</h5>
+            </td>
+            <td class="col-md-3 text-center vert-align"><img src="images/wiiisdom-logo.png"/></td>
+        </tr>
+    </table>
+    
+    <div class="row">
+        <div class="col-md-6">
+
+            <h3 class="text-success">Context used: dev.json</h3>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Summary</h3>
+<table class="table table-striped">
+    <!--<caption>Summary</caption>-->
+    <thead>
+    <tr>
+        <!--<td>#</td>-->
+        <td>Task Name</td>
+        <td>Status</td>
+        <td>Time</td>
+    </tr>
+    </thead>
+    <!--For each task...-->
+    <!--Each task should contain an anchor link to the task config later down the page-->
+
+    <tbody>
+    
+    <tr>
+        <td><a href="#link-289c214b-6738-468d-a321-d65406566aee" target="_self">Open Viz</a></td>
+        
+            <td><p class="text-success">&#9989;</p></td>
+        
+        <td>6.000s</td>
+    </tr>
+    
+    <tr>
+        <td><a href="#link-4b506968-6d6f-441b-8328-ed07deb3f9bd" target="_self">Assert Image Equals</a></td>
+        
+            
+                <td>&#10060;</td>
+            
+        
+        <td>3.100s</td>
+    </tr>
+    
+    </tbody>
+</table>
+
+            <h3>Task Details</h3>
+    
+    <table class="table" id="link-289c214b-6738-468d-a321-d65406566aee">
+        <thead>
+            <tr>
+                <th class="details-head-col1">Task Name (1/2)</th>
+                <th>Open Viz</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Configuration</td>
+                <td id="task-289c214b-6738-468d-a321-d65406566aee"></td>
+                <script type="text/javascript">
+                    var jsonData = {"type":"viz_open","disabled":false,"name":"Open Viz","url":"[\"https:\/\/10ax.online.tableau.com\/\/t\/mauriziodev\/views\/Superstore_Img\/SuperstoreAnalysis\"]"};
+                    var formatter = new JSONFormatter(jsonData, 0);
+                    var tag = document.getElementById("task-289c214b-6738-468d-a321-d65406566aee");
+                    tag.appendChild(formatter.render());
+                </script>
+            </tr>
+            
+            
+            <tr>
+                <td>Artifact</td>
+                <td>
+                    
+                        Not available
+                    
+                </td>
+            </tr>
+            
+            
+            
+            
+            
+            
+            
+                <tr>
+                    <td>Result Message</td>
+                    <td><samp><p>Viz opened successfully</p></samp></td>
+                </tr>
+            
+            
+            
+            
+            
+            
+            
+            <tr>
+                <td>Screenshot</td>
+                <td class="col-md-12">
+                    
+                        <img class="img-responsive img-thumbnail" src="screenshots/kinesis-09-06-2023-09-13-830273600.png"/>
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        
+    
+    <table class="table" id="link-4b506968-6d6f-441b-8328-ed07deb3f9bd">
+        <thead>
+            <tr>
+                <th class="details-head-col1">Task Name (2/2)</th>
+                <th>Assert Image Equals</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Configuration</td>
+                <td id="task-4b506968-6d6f-441b-8328-ed07deb3f9bd"></td>
+                <script type="text/javascript">
+                    var jsonData = {"type":"assert_image_equals","disabled":false,"name":"Assert Image Equals","expected-image-path":"resources\/snapshot-SuperstoreAnalysis.png","comparison-mode":"Fine"};
+                    var formatter = new JSONFormatter(jsonData, 0);
+                    var tag = document.getElementById("task-4b506968-6d6f-441b-8328-ed07deb3f9bd");
+                    tag.appendChild(formatter.render());
+                </script>
+            </tr>
+            
+            
+            <tr>
+                <td>Artifact</td>
+                <td>
+                    
+                        Not available
+                    
+                </td>
+            </tr>
+            
+            
+            
+            
+            
+            
+            
+                <tr>
+                    <td>Result Message</td>
+                    <td><samp><p>Image not as expected.</p></samp></td>
+                </tr>
+            
+            
+            
+            
+            
+            
+            
+                
+<tr>
+    <td>Difference</td>
+    <td>
+        <table>
+            <tr>
+                <td class="col-md-6">
+                    <h4><strong>Expected</strong></h4>
+                    
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="artifacts/">
+                                <img class="img-responsive img-thumbnail" src="artifacts/source-image-09-06-2023-09-13-565652900.png"/>
+                            </a>
+                        </div>
+                    
+                </td>
+                <td class="col-md-6">
+                    <h4><strong>Difference</strong></h4>
+                    
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="artifacts/diff-image-09-06-2023-09-13-565652900.png">
+                                <img class="img-responsive img-thumbnail" src="artifacts/diff-image-09-06-2023-09-13-565652900.png"/>
+                            </a>
+                        </div>
+                    
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+            
+            <tr>
+                <td>Screenshot</td>
+                <td class="col-md-12">
+                    
+                        <img class="img-responsive img-thumbnail" src="screenshots/kinesis-09-06-2023-09-13-946036300.png"/>
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        
+    
+
+        </div>
+    </div>
+</div>
+<div class="col-md-1"></div>
+</body>
+</html>
