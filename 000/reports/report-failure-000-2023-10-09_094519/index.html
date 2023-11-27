@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/kinesis.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://raw.githubusercontent.com/mohsen1/json-formatter-js/v1.1.0/dist/bundle.js" type="text/javascript"></script> <!-- json-formatter-js, distributed as bundle.js on github -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js" type="text/javascript"></script>
+    <script src="https://raw.githubusercontent.com/i-like-robots/EasyZoom/master/dist/easyzoom.js" type="text/javascript"></script>
+    <!-- Init easyzoom -->
+    <script language="javascript">$(document).ready(function() { $('.easyzoom').easyZoom(); });</script>
+    <meta charset="UTF-8">
+    <base target="_blank">
+    <title>000 report - Failed - 2023-10-09 09:45:19</title>
+</head>
+<body>
+<div class="col-md-1"></div>
+<div class="col-md-10">
+    <table class="table table-borderless">
+        <tr>
+            <td class="col-md-3 text-center vert-align">
+                
+                    
+                        <h4><span class="label label-danger">&#10060; Failed</span></h4>
+                    
+                
+            </td>
+            <td class="col-md-6 text-center vert-align">
+                <h3 class="white-space-prewrap">000</h3>
+                <h5></h5>
+                <h5>2023-10-09 09:45:19</h5>
+            </td>
+            <td class="col-md-3 text-center vert-align"><img src="images/wiiisdom-logo.png"/></td>
+        </tr>
+    </table>
+    
+    <div class="row">
+        <div class="col-md-6">
+
+            <h3 class="text-success">Context used: prod.json</h3>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Summary</h3>
+<table class="table table-striped">
+    <!--<caption>Summary</caption>-->
+    <thead>
+    <tr>
+        <!--<td>#</td>-->
+        <td>Task Name</td>
+        <td>Status</td>
+        <td>Time</td>
+    </tr>
+    </thead>
+    <!--For each task...-->
+    <!--Each task should contain an anchor link to the task config later down the page-->
+
+    <tbody>
+    
+    <tr>
+        <td><a href="#link-31beaa77-a218-43a4-bf2d-ccb822e9d36a" target="_self">Open Viz</a></td>
+        
+            <td><p class="text-success">&#9989;</p></td>
+        
+        <td>7.600s</td>
+    </tr>
+    
+    <tr>
+        <td><a href="#link-1baae570-b4e4-4b75-a914-072a45e3b1a3" target="_self">Assert Data Rules</a></td>
+        
+            
+                <td>&#10060;</td>
+            
+        
+        <td>8.300s</td>
+    </tr>
+    
+    </tbody>
+</table>
+
+            <h3>Task Details</h3>
+    
+    <table class="table" id="link-31beaa77-a218-43a4-bf2d-ccb822e9d36a">
+        <thead>
+            <tr>
+                <th class="details-head-col1">Task Name (1/2)</th>
+                <th>Open Viz</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Configuration</td>
+                <td id="task-31beaa77-a218-43a4-bf2d-ccb822e9d36a"></td>
+                <script type="text/javascript">
+                    var jsonData = {"type":"viz_open","disabled":false,"name":"Open Viz","url":"[\"https:\/\/dub01.online.tableau.com\/\/t\/wiiisdom\/views\/Superstore_16750812384000\/Overview\"]","refresh-data":false};
+                    var formatter = new JSONFormatter(jsonData, 0);
+                    var tag = document.getElementById("task-31beaa77-a218-43a4-bf2d-ccb822e9d36a");
+                    tag.appendChild(formatter.render());
+                </script>
+            </tr>
+            
+            
+            <tr>
+                <td>Artifact</td>
+                <td>
+                    
+                        Not available
+                    
+                </td>
+            </tr>
+            
+            
+            
+            
+            
+            
+            
+                <tr>
+                    <td>Result Message</td>
+                    <td><samp><p>Viz opened successfully</p></samp></td>
+                </tr>
+            
+            
+            
+            
+            
+            
+            
+            <tr>
+                <td>Screenshot</td>
+                <td class="col-md-12">
+                    
+                        <img class="img-responsive img-thumbnail" src="screenshots/kinesis-09-10-2023-09-45-32182800.png"/>
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        
+    
+    <table class="table" id="link-1baae570-b4e4-4b75-a914-072a45e3b1a3">
+        <thead>
+            <tr>
+                <th class="details-head-col1">Task Name (2/2)</th>
+                <th>Assert Data Rules</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Configuration</td>
+                <td id="task-1baae570-b4e4-4b75-a914-072a45e3b1a3"></td>
+                <script type="text/javascript">
+                    var jsonData = {"data-type":"UNDERLYING","disabled":false,"exclude-nulls":false,"name":"Assert Data Rules","formatted-values":false,"type":"assert_data_rule_meets","scope":"at-least-one-row","rules":[],"tableau-export-csv":{"encoding":"utf8","delimiter":",","newline-char":"\n"},"target":"Sale Map","formulas":["[Order Date] = Today()"]};
+                    var formatter = new JSONFormatter(jsonData, 0);
+                    var tag = document.getElementById("task-1baae570-b4e4-4b75-a914-072a45e3b1a3");
+                    tag.appendChild(formatter.render());
+                </script>
+            </tr>
+            
+            
+            <tr>
+                <td>Artifact</td>
+                <td>
+                    
+                        <a href="artifacts/eval-formulas-2023-10-09_094518.xlsx">eval-formulas-2023-10-09_094518.xlsx</a>
+                    
+                </td>
+            </tr>
+            
+            
+            
+            
+            
+            
+            
+                
+
+    
+    
+        
+        <tr>
+            <td>Result Message</td>
+            <td><samp><p>["Test Formula failed.  Formula is never true in any row: [ [Order Date] = Today() ]"]</p></samp></td>
+        </tr>
+        
+        <tr>
+            <td>Failed Formulas</td>
+            <td>
+                <table class="table table-striped code-data">
+                    <thead>
+                        <tr>
+                            <td><strong>Failed Validations (Up to 20 rows)</strong></td>
+                            
+                            <td><strong>State</strong></td>
+                            
+                            <td><strong>Order Date</strong></td>
+                            
+                            <td><strong>Order Profitable?</strong></td>
+                            
+                            <td><strong>Region</strong></td>
+                            
+                            <td><strong>Order ID</strong></td>
+                            
+                            <td><strong>Profit</strong></td>
+                            
+                            <td><strong>Sales</strong></td>
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        <td class="text-danger"><samp>[Order Date] = Today()</samp></td>
+                        
+                            
+                                <td><samp><em>Null</em></samp></td>
+                            
+                        
+                            
+                                <td><samp><em>Null</em></samp></td>
+                            
+                        
+                            
+                                <td><samp><em>Null</em></samp></td>
+                            
+                        
+                            
+                                <td><samp><em>Null</em></samp></td>
+                            
+                        
+                            
+                                <td><samp><em>Null</em></samp></td>
+                            
+                        
+                            
+                                <td><samp><em>Null</em></samp></td>
+                            
+                        
+                            
+                                <td><samp><em>Null</em></samp></td>
+                            
+                        
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    
+    
+
+            
+            
+            
+            
+            
+            
+            
+            <tr>
+                <td>Screenshot</td>
+                <td class="col-md-12">
+                    
+                        <img class="img-responsive img-thumbnail" src="screenshots/kinesis-09-10-2023-09-45-390066800.png"/>
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        
+    
+
+        </div>
+    </div>
+</div>
+<div class="col-md-1"></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+    "type": "functional",
+    "name": "000 - WH Refresh",
+    "description": "Test warehouse refresh based on order date (must have at least one row with yesterday's date",
+    "tasks": [
+        {
+            "type": "viz_open",
+            "disabled": false,
+            "name": "Open Viz",
+            "url": "[\"{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore_16750812384000/Overview\"]",
+            "refresh-data": true
+        },
+        {
+            "type": "assert_data_rule_meets",
+            "disabled": false,
+            "name": "Assert Data Rules",
+            "data-type": "UNDERLYING",
+            "scope": "at-least-one-row",
+            "formatted-values": false,
+            "exclude-nulls": false,
+            "tableau-export-csv": {
+                "encoding": "utf8",
+                "delimiter": ",",
+                "newline-char": "\n"
+            },
+            "target": "Sale Map",
+            "rules": [],
+            "formulas": [
+                "[Order Date] >= (Today()-1)"
+            ]
+        }
+    ],
+    "tableau-snapshot": {}
+}
