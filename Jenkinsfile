@@ -20,6 +20,6 @@ node {
 def archiveReports() {
 	stage('Archive Test Evidences (Wiiisdom Ops for Tableau)') {
 		echo("***** Job successful - archiving reports *****")
-		archiveArtifacts artifacts: 'Reports*/*Demo2Win-*'
+		archiveArtifacts artifacts: 'Reports*/'
 	}
 }
