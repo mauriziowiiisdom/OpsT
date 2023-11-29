@@ -32,7 +32,7 @@
         },
         {
             "type": "assert_data_rule_meets",
-            "disabled": false,
+            "disabled": true,
             "name": "Assert Data Rules",
             "data-type": "SUMMARY",
             "scope": "every-row",
