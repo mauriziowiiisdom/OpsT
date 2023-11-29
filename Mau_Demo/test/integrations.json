@@ -2,10 +2,10 @@
     "integrations": [
         {
             "type": "database",
-            "enabled": true,
+            "enabled": false,
             "jdbcURL": "jdbc:postgresql://localhost:5432/OpsT_Integration_DB",
             "user": "postgres",
-            "password": "4fb5f5c85b1e12e003af36c7475e5e24;27dRXVEvMAw=;encrypted"
+            "password": "7fb60ce8064be7b338b345486a77e707;oqf0hYEUwP0=;encrypted"
         },
         {
             "type": "slack",
