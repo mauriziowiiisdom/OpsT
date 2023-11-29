@@ -13,14 +13,22 @@ node {
 	} catch (e) {
 		echo("***** Job failed - check logs *****")
 		throw(e);
-	} finally {
-		archiveReports();
-	}
+	} 
+	//finally {
+	//	archiveReports();
+	//}
+	
+    post {
+        always {
+			echo("***** Archiving reports *****")
+            junit 'Reports*/'
+        }
+    }
 }
 
-def archiveReports() {
-	stage('Archive Test Evidence (Wiiisdom Ops for Tableau)') {
-		echo("***** Job successful - archiving reports *****")
-		archiveArtifacts artifacts: 'Reports*/'
-	}
-}
+//def archiveReports() {
+//	stage('Archive Test Evidence (Wiiisdom Ops for Tableau)') {
+//		echo("***** Job successful - archiving reports *****")
+//		archiveArtifacts artifacts: 'Reports*/'
+//	}
+//}
