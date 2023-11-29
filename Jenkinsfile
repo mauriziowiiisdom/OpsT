@@ -8,7 +8,7 @@ node {
 		stage('Run Wiiisdom Ops for Tableau Test') {
 			// Run Kinesis CLI as a shell command
 			echo("***** Running test *****")
-			bat('"C:/Wiiisdom-Ops-for-Tableau-bundle-2023.4-win32/kinesis-cli/kinesis.bat" --canvas-timeout=240 --path "C:/GitHubRepos/OpsT/Mau_Demo/test/Demo2Win" --output "//EC2AMAZ-CDHN93M/OpsT_Reports" --context-vars "C:/GitHubRepos/OpsT/Mau_Demo/context/prod.json" --recursive')
+			bat('"C:/Wiiisdom-Ops-for-Tableau-bundle-2023.4-win32/kinesis-cli/kinesis.bat" --canvas-timeout=240 --path "C:/GitHubRepos/OpsT/Mau_Demo/test/Demo2Win" --output "C:/GitHubRepos/OpsT/Reports" --context-vars "C:/GitHubRepos/OpsT/Mau_Demo/context/prod.json" --recursive')
 		}
 		stage('Archiving artifacts'){
 			echo("***** Archiving reports *****")
