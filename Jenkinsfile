@@ -20,7 +20,7 @@ node {
 	} 
 	finally {
 	//	archiveReports();
-		archiveTestResults()		
+		archiveTestResults();		
 	}
 }
 
