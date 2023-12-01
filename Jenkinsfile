@@ -20,7 +20,7 @@ node {
 	} 
 	finally {
 	//	archiveReports();
-		echo 'Job completed'
+		echo ('Job completed')
 	}
 }
 
