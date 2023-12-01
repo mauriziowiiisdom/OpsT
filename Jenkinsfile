@@ -20,7 +20,15 @@ node {
 	} 
 	finally {
 	//	archiveReports();
-		echo ('Job completed')
+		archiveTestResults()		
+	}
+}
+
+def archiveTestResults(){
+	stage('Archive Test Evidence (Wiiisdom Ops for Tableau)'){
+		echo("***** Archiving reports to S3 bucket *****")
+        bat('"C:/GitHubRepos/S3_Upload.bat"')
+		echo ("***** Job completed *****")
 	}
 }
 

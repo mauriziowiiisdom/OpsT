@@ -1,0 +1,253 @@
+.table tbody>tr>td.vert-align {
+	vertical-align: middle;
+}
+
+.table.table-borderless td,
+.table.table-borderless th {
+	border: 0 !important;
+}
+
+.table.table-borderless {
+	margin-bottom: 0px;
+}
+
+.panel-heading {
+	cursor: pointer;
+}
+
+/**
+ * EasyZoom core styles
+ */
+.easyzoom {
+	position: relative;
+
+	/* 'Shrink-wrap' the element */
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+.easyzoom img {
+	vertical-align: bottom;
+}
+
+.easyzoom.is-loading img {
+	cursor: progress;
+}
+
+.easyzoom.is-ready img {
+	cursor: crosshair;
+}
+
+.easyzoom.is-error img {
+	cursor: not-allowed;
+}
+
+.easyzoom-notice {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 150;
+	width: 10em;
+	margin: -1em 0 0 -5em;
+	line-height: 2em;
+	text-align: center;
+	background: #FFF;
+	box-shadow: 0 0 10px #888;
+}
+
+.easyzoom-flyout {
+	position: absolute;
+	z-index: 100;
+	overflow: hidden;
+	background: #FFF;
+}
+
+/**
+ * EasyZoom layout variations
+ */
+.easyzoom--overlay .easyzoom-flyout {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.easyzoom--adjacent .easyzoom-flyout {
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	margin-left: 20px;
+}
+
+/** Used to not alterate data coming from our code or from Tableau API.
+	Eg: a very long string coming from the workbook will not be cut in two lines
+**/
+.code-data {
+	white-space: pre-wrap !important;
+}
+
+.details-head-col1 {
+	width: 15%;
+}
+
+.arrow {
+	border: solid black;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 3px;
+	transition: all ease 0.3s;
+	vertical-align: text-bottom;
+}
+
+.accordion-toggle .arrow {
+	transform: rotate(135deg);
+}
+
+.accordion-toggle[aria-expanded="true"] .arrow {
+	transform: rotate(45deg);
+}
+
+.d-flex {
+	display: flex;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.direction-column {
+	flex-direction: column;
+}
+
+.w-10 {
+	width: 10%;
+}
+
+.w-33 {
+	width: 33%;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.r-10px {
+	right: 10px;
+}
+
+.b-13px {
+	bottom: 13px;
+}
+
+.b-10px {
+	bottom: 10px;
+}
+
+.border-radius-top-right-3 {
+	border-radius: 3px 3px 0 0;
+}
+
+.margin-0 {
+	margin: 0;
+}
+
+.py-2 {
+	padding: 1em 0em;
+}
+
+.border-all-1-px-solid {
+	border: 1px solid #ddd;
+}
+
+/** the red is brighter than the native in bootstrap**/
+.text-red {
+	color: red;
+}
+
+/** the green is brighter than the native in bootstrap**/
+.text-green {
+	color: green;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.full-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.accordion-check-name-handler,
+.accordion-checks-handler {
+	padding: 8px;
+	position: relative;
+}
+
+.accordion-checks-handler {
+	margin: 0 !important;
+	background-color: #f5f5f5;
+	border-radius: 3px 3px 0 0;
+	cursor: pointer;
+}
+
+.accordion-check-name-handler {
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	width: 100%;
+}
+
+.overflow-x-auto {
+	overflow-x: auto;
+}
+
+.table-title {
+	padding-top: 0px;
+	color: black;
+}
+
+.pr-2,
+.px-2 {
+	padding-right: 1em;
+}
+
+.pl-2,
+.px-2 {
+	padding-left: 1em;
+}
+
+.text-with-grey-background {
+	background-color: #f9f9f9;
+	padding: 1em 1em;
+}
+
+.m-0 {
+	margin: 0px !important;
+}
+
+.pl-5-px {
+	padding-left: 5px;
+}
+
+.filter-value-line {
+	border-top: 1px solid #ddd;
+	padding: 4px;
+}
+
+.white-space-prewrap {
+	white-space: pre-wrap;
+}
