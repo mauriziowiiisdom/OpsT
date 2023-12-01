@@ -12,7 +12,7 @@ node {
 		}
 		stage('Archiving artifacts to S3'){
 			echo("***** Archiving reports to S3 bucket *****")
-            bat('"C:\GitHubRepos\S3_Upload.bat')
+            bat('"C:\GitHubRepos\S3_Upload.bat"')
 		}
 	} catch (e) {
 		echo("***** Job failed - check logs *****")
