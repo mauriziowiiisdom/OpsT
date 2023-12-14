@@ -1,0 +1,129 @@
+{
+    "type": "functional",
+    "name": "TCS - Advanced SQL",
+    "description": "Placeholder",
+    "tasks": [
+        {
+            "type": "viz_open",
+            "disabled": false,
+            "name": "Open Viz",
+            "url": "[\"{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore_16750812384000/Overview\"]"
+        },
+        {
+            "type": "assert_data_rule_meets",
+            "disabled": false,
+            "name": "Assert Data Rules - Number of states",
+            "data-type": "SUMMARY",
+            "scope": "every-row",
+            "formatted-values": false,
+            "exclude-nulls": false,
+            "tableau-export-csv": {
+                "encoding": "utf8",
+                "delimiter": ",",
+                "newline-char": "\n"
+            },
+            "target": "Sale Map",
+            "row-counts": [
+                {
+                    "operator": "equals",
+                    "expression-value": 50
+                }
+            ],
+            "workflow": {
+                "continue-on-error": true
+            }
+        },
+        {
+            "type": "assert_data_rule_meets",
+            "disabled": false,
+            "name": "Assert Data Rules - Sales",
+            "data-type": "UNDERLYING",
+            "scope": "every-row",
+            "formatted-values": true,
+            "exclude-nulls": false,
+            "tableau-export-csv": {
+                "encoding": "utf8",
+                "delimiter": ",",
+                "newline-char": "\n"
+            },
+            "target": "Sales by Product",
+            "rules": [
+                {
+                    "operator": "greater-than",
+                    "column": "SUM(Sales)",
+                    "expression-value": "0"
+                }
+            ],
+            "workflow": {
+                "continue-on-error": true
+            }
+        },
+        {
+            "type": "assert_data_rule_meets",
+            "disabled": false,
+            "name": "Assert Data Rules - Profitability",
+            "data-type": "UNDERLYING",
+            "scope": "every-row",
+            "formatted-values": false,
+            "exclude-nulls": false,
+            "tableau-export-csv": {
+                "encoding": "utf8",
+                "delimiter": ",",
+                "newline-char": "\n"
+            },
+            "target": "Sales by Product",
+            "formulas": [
+                "if([Order Profitable?],if([Profit]>0,TRUE,FALSE),if([Profit]<=0,TRUE,FALSE)) "
+            ],
+            "workflow": {
+                "continue-on-error": true
+            }
+        },
+        {
+            "type": "assert_sql_equals",
+            "name": "Assert SQL Equals",
+            "disabled": false,
+            "data-type": "SUMMARY",
+            "tableau-export-csv": {
+                "encoding": "utf8",
+                "delimiter": ",",
+                "newline-char": "\n"
+            },
+            "target-db": {
+                "max-rows": 2000,
+                "jdbcURL-generated": true,
+                "jdbc-url": "jdbc:data:world:sql:kevinmazillewiiisdom:salemapdata",
+                "user": "kevinmazillewiiisdom",
+                "password": "d39b6ef831d8226b25cb41bda8d2c92a;H6w+FKsq2xGHhQ+ASnq+BTreG27V8whFu788Ojk3j8J8DHMndVT5+xsK8tqJvC/KdeZ6pwtnrI9E0+rRNhk19S4HnCJmEEPuctwNqUnLXVfmgXKaRpt8pCyH6ScvQHyyNYXy7nCIN2WbxoDJw0rU6nSM0FLK7aDqHiTsYJaZwm4h4uwwHdQOY9nA5HBtf0wMDrc/iudcc8T/cpZsfTypHHSBZPwW+Pq9Y/qQDIBFSfyRAsYAmkoVZYRP778e9e2vug2F8Q0nAXbUXeBDaIw6dZTwoa7l5A+XgKBvUZMz3JSm18zfQpbkCC222xoirsG8CMv9N3qKUOgc8LZLHu8N1GKiFwXNbMRNG8/PmTDAUBsYcgZKo5APlHt76g0pBTJsEGR8djyBrhmp7gGHXAaBkb4l0hZz2pHop5SzTj+x0SFCc5OljCx3OjW3vgfwa7LFp0s6L1PMH7i/tvwHaA+IOvCUuF0Kl1rGls2om0Z+MDqEiOTWwcgYOhwcpHjUTZTcSE5xNV+flWDw/CRJXSswSQyJPWRrBWc9jzf4x/RQ3dZQv13X/+ih7lESyw==;encrypted"
+            },
+            "truncate-decimal-places": -1,
+            "comparison-mode": "native",
+            "sql": "SELECT\n  state\nFROM\n  salemapdata",
+            "target": "Sale Map",
+            "columns": [
+                "State"
+            ]
+        },
+        {
+            "type": "publish_tableau",
+            "disabled": false,
+            "name": "Publish to Prod",
+            "source-doc-location": "tableau-server",
+            "source-doc-type": "workbook",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "tableau-server-password": "e490545cefdbb55753664faa12c6784f;1kwlEDAuxU8rQmL1zy0W;encrypted",
+            "site-id": "{{TABLEAU_SITE}}",
+            "project": "{{TABLEAU_PROJECT}}",
+            "target-context": "Wiiisdom_Tableau_Cloud - MM.json",
+            "tabbed": false,
+            "overwrite": true,
+            "source-doc-name": "[\"Solution Consulting\",\"Maurizio\",\"Superstore\"]",
+            "target-doc-name": "Superstore",
+            "target-project": "[\"Solution Consulting\",\"Maurizio\",\"Published from Dev\"]",
+            "db-password": ""
+        }
+    ],
+    "tableau-snapshot": {},
+    "disabled": false
+}
