@@ -8,7 +8,7 @@ node {
 		stage('Retrieve Repository') {
 			// Copy last version of repository to OpsT server
 			echo("***** Copying repository to OpsT server *****")
-			bat('"C:/GitHubReposServer/retrieve_repo.sh"')
+			sh('"C:/GitHubReposServer/retrieve_repo.sh"')
 			echo ("***** Completed *****")
 		}
 		stage('Run Wiiisdom Ops for Tableau Tests') {
