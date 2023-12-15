@@ -1,20 +1,13 @@
 // this file must be present in the GitHub repository for Jenkins to be able to use it
 node {
 	try {
-		//stage('SCM Checkout') {
-		//	echo("***** Checking out repository *****")
-		//	checkout scm
-		//}
-		dir('C:/GitHubReposServer/OpsT/ckout') {
-			echo("***** Checking out repository *****")
-			checkout scm
+		// checks out remote repo to specified folder
+		stage('Retrieve Repository') {
+			dir('C:/GitHubReposServer/OpsT') {
+				echo("***** Checking out repository *****")
+				checkout scm
+			}
 		}
-		//stage('Retrieve Repository') {
-			// Copy last version of repository to OpsT server
-			//echo("***** Copying repository to OpsT server *****")
-			//sh('"C:/GitHubReposServer/retrieve_repo.sh"')
-			//echo ("***** Repository copied *****")
-		//}
 		stage('Run Wiiisdom Ops for Tableau Tests') {
 			// Run Kinesis CLI as a shell command
 			echo("***** Running tests *****")
