@@ -9,7 +9,7 @@ node {
 			// Copy last version of repository to OpsT server
 			echo("***** Copying repository to OpsT server *****")
 			sh('"C:/GitHubReposServer/retrieve_repo.sh"')
-			echo ("***** Completed *****")
+			echo ("***** Repository copied *****")
 		}
 		stage('Run Wiiisdom Ops for Tableau Tests') {
 			// Run Kinesis CLI as a shell command
