@@ -73,6 +73,28 @@
                     "expression-value": 0
                 }
             ]
+        },
+        {
+            "type": "assert_data_rule_meets",
+            "disabled": true,
+            "name": "Assert Data Rules (Rows) (Copied)",
+            "data-type": "SUMMARY",
+            "scope": "every-row",
+            "formatted-values": false,
+            "exclude-nulls": false,
+            "tableau-export-csv": {
+                "encoding": "utf8",
+                "delimiter": ",",
+                "newline-char": "\n"
+            },
+            "target": "Sale Map",
+            "rules": [],
+            "row-counts": [
+                {
+                    "operator": "greater-than",
+                    "expression-value": 0
+                }
+            ]
         }
     ],
     "tableau-snapshot": {}
